@@ -21,6 +21,10 @@ Then install the tool you want:
 
 ```bash
 brew install enma
+
+
+### or
+
 brew install magicdrive/tap/enma # install without tap
 ```
 
