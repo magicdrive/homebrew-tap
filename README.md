@@ -14,7 +14,7 @@ This is the official Homebrew tap repository for tools developed by [magicdrive]
 First, add the tap:
 
 ```bash
-brew tap magicdrive/magicdrive
+brew tap magicdrive/tap
 ```
 
 Then install the tool you want:
