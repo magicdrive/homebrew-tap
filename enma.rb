@@ -5,24 +5,32 @@
 class Enma < Formula
   desc "Yet another integration software with file monitoring."
   homepage "https://github.com/magicdrive/enma"
-  version "1.1.7"
+  version "1.1.8"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/enma/releases/download/v1.1.7/enma_1.1.7_darwin_amd64.tar.gz"
-      sha256 "ab8ed5f251dc1f0b9c0672b04af2fdbead9360b7faf3c9ae08759aa90ef9be73"
+      url "https://github.com/magicdrive/enma/releases/download/v1.1.8/enma_1.1.8_darwin_amd64.tar.gz"
+      sha256 "2782670b465043bc0c4d8ba4b15887820d859fea1d7acab7a88e2e9c5293ea19"
 
       def install
         bin.install "enma"
+        cp "completions/enma-completion.sh", "completions/enma.zsh"
+
+        bash_completion.install "completions/enma-completion.sh" => "enma"
+        zsh_completion.install "completions/enma.zsh" => "_enma"
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/enma/releases/download/v1.1.7/enma_1.1.7_darwin_arm64.tar.gz"
-      sha256 "a76b73f00df0229dff50eb81fae426894c05167b5e335bd7459ab3d56dc049b9"
+      url "https://github.com/magicdrive/enma/releases/download/v1.1.8/enma_1.1.8_darwin_arm64.tar.gz"
+      sha256 "56d7d1a0c01c49e4cd091e33d72802532deba02f9954983eaa70a843b6e337af"
 
       def install
         bin.install "enma"
+        cp "completions/enma-completion.sh", "completions/enma.zsh"
+
+        bash_completion.install "completions/enma-completion.sh" => "enma"
+        zsh_completion.install "completions/enma.zsh" => "_enma"
       end
     end
   end
@@ -30,21 +38,29 @@ class Enma < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/enma/releases/download/v1.1.7/enma_1.1.7_linux_amd64.tar.gz"
-        sha256 "9708e8064dd6fbd47e8e5e02b160553d659faa0ecce238e47fa1033b66184a4a"
+        url "https://github.com/magicdrive/enma/releases/download/v1.1.8/enma_1.1.8_linux_amd64.tar.gz"
+        sha256 "fe3363e27f6d59a08ee0ee0495b60a93a07bacc40eba69d633ec30160c7ff008"
 
         def install
           bin.install "enma"
+          cp "completions/enma-completion.sh", "completions/enma.zsh"
+
+          bash_completion.install "completions/enma-completion.sh" => "enma"
+          zsh_completion.install "completions/enma.zsh" => "_enma"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/enma/releases/download/v1.1.7/enma_1.1.7_linux_arm64.tar.gz"
-        sha256 "b4e11f939bacf0cda7b0f6f2090e353c7d47fd2976ea57e174ad1080b5c91d65"
+        url "https://github.com/magicdrive/enma/releases/download/v1.1.8/enma_1.1.8_linux_arm64.tar.gz"
+        sha256 "45f0e10c466779a62beba8007c67e2faeb7b52465c19c882e0eee0b854e2bcf7"
 
         def install
           bin.install "enma"
+          cp "completions/enma-completion.sh", "completions/enma.zsh"
+
+          bash_completion.install "completions/enma-completion.sh" => "enma"
+          zsh_completion.install "completions/enma.zsh" => "_enma"
         end
       end
     end
