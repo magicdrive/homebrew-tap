@@ -5,28 +5,28 @@
 class Kirke < Formula
   desc "Yet another command-line tool for converting JSON strings into Golang struct definitions."
   homepage "https://github.com/magicdrive/kirke"
-  version "1.2.4"
+  version "1.2.5"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.2.4/kirke_1.2.4_darwin_amd64.tar.gz"
-      sha256 "7e324963480563bb83003ba304dfcaf0e7f86b25fda677e5706ebcb11dd9c8e3"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.2.5/kirke_1.2.5_darwin_amd64.tar.gz"
+      sha256 "835bb74912e70618a910c389426ffa4147c708fbe47f160c631ae3e8f16185d4"
 
       def install
         bin.install "kirke"
-        bash_completion.install "completions/kirke-completion.sh" => "kirke"
-        zsh_completion.install "completions/kirke-completion.sh"
+        bash_completion.install "#{prefix}/completions/kirke-completion.sh" => "kirke"
+        zsh_completion.install "#{prefix}/completions/kirke-completion.sh"
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.2.4/kirke_1.2.4_darwin_arm64.tar.gz"
-      sha256 "5a0c9265adf867191a57acb900b9468c3617ea7bb4ee708f7af996a9425af427"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.2.5/kirke_1.2.5_darwin_arm64.tar.gz"
+      sha256 "8bf0987e0cbd7561a6d0912c4927a2209f933d20f58e5f5b757fef0dc3d9d75a"
 
       def install
         bin.install "kirke"
-        bash_completion.install "completions/kirke-completion.sh" => "kirke"
-        zsh_completion.install "completions/kirke-completion.sh"
+        bash_completion.install "#{prefix}/completions/kirke-completion.sh" => "kirke"
+        zsh_completion.install "#{prefix}/completions/kirke-completion.sh"
       end
     end
   end
@@ -34,25 +34,25 @@ class Kirke < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/kirke/releases/download/v1.2.4/kirke_1.2.4_linux_amd64.tar.gz"
-        sha256 "f719e0598f63bb2faf2a82441b91beb6a85fbc061dc8756e5a0124e8fb4c599a"
+        url "https://github.com/magicdrive/kirke/releases/download/v1.2.5/kirke_1.2.5_linux_amd64.tar.gz"
+        sha256 "41e77d5c45457334f7338230f87c1559b4de8602d9eba9e6c155fde3bbb86103"
 
         def install
           bin.install "kirke"
-          bash_completion.install "completions/kirke-completion.sh" => "kirke"
-          zsh_completion.install "completions/kirke-completion.sh"
+          bash_completion.install "#{prefix}/completions/kirke-completion.sh" => "kirke"
+          zsh_completion.install "#{prefix}/completions/kirke-completion.sh"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/kirke/releases/download/v1.2.4/kirke_1.2.4_linux_arm64.tar.gz"
-        sha256 "d84322bb7b45c9676fa2b7a3a1613b0263737e5d60bb93b626abe09cbf37facf"
+        url "https://github.com/magicdrive/kirke/releases/download/v1.2.5/kirke_1.2.5_linux_arm64.tar.gz"
+        sha256 "92825391891761c8e4ea192c747bf57c1e6b6ba81d6667d3cda8ec04d7793c34"
 
         def install
           bin.install "kirke"
-          bash_completion.install "completions/kirke-completion.sh" => "kirke"
-          zsh_completion.install "completions/kirke-completion.sh"
+          bash_completion.install "#{prefix}/completions/kirke-completion.sh" => "kirke"
+          zsh_completion.install "#{prefix}/completions/kirke-completion.sh"
         end
       end
     end
