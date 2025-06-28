@@ -5,28 +5,30 @@
 class Ark < Formula
   desc "Yet another alternate [directory | repository] represent text generator tool"
   homepage "https://github.com/magicdrive/ark"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/ark/releases/download/v0.3.0/ark_0.3.0_darwin_amd64.tar.gz"
-      sha256 "36312eec89e33d54ecb0c78363eab4e1150778f6f8f92552fa4fdf109e4ab2fb"
+      url "https://github.com/magicdrive/ark/releases/download/v0.4.0/ark_0.4.0_darwin_amd64.tar.gz"
+      sha256 "07d000b356206f0a1a9addddb3cfce143ab79e66a6e69faef8c21c355943620e"
 
       def install
         bin.install "ark"
         bash_completion.install "completions/bash/ark-completion.bash" => "ark"
         zsh_completion.install "completions/zsh/_ark" => "_ark"
+        fish_completion.install "completions/fish/ark.fish" => "ark.fish"
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/ark/releases/download/v0.3.0/ark_0.3.0_darwin_arm64.tar.gz"
-      sha256 "af4c59c4e1020641c3dc9cd2b6cb57c99ca9c5a19d568f88a5dc5f01b398ddb3"
+      url "https://github.com/magicdrive/ark/releases/download/v0.4.0/ark_0.4.0_darwin_arm64.tar.gz"
+      sha256 "0d4273871b58d2c2c489ee3a7b9f02dfe50bb3676ac24b7421f2e542c32b94a7"
 
       def install
         bin.install "ark"
         bash_completion.install "completions/bash/ark-completion.bash" => "ark"
         zsh_completion.install "completions/zsh/_ark" => "_ark"
+        fish_completion.install "completions/fish/ark.fish" => "ark.fish"
       end
     end
   end
@@ -34,25 +36,27 @@ class Ark < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v0.3.0/ark_0.3.0_linux_amd64.tar.gz"
-        sha256 "a07c0989cd4f21cfce4f464fcb5c65b3c589bf60c37f322c5e77a1bde884ecc5"
+        url "https://github.com/magicdrive/ark/releases/download/v0.4.0/ark_0.4.0_linux_amd64.tar.gz"
+        sha256 "8c7f2f7ef17340c5bc11132299def7caba5a4ea9b8acb72dc45dddaec0a98e31"
 
         def install
           bin.install "ark"
           bash_completion.install "completions/bash/ark-completion.bash" => "ark"
           zsh_completion.install "completions/zsh/_ark" => "_ark"
+          fish_completion.install "completions/fish/ark.fish" => "ark.fish"
         end
       end
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v0.3.0/ark_0.3.0_linux_arm64.tar.gz"
-        sha256 "78a85c04539a61a9a0b12749063242e47bb24ada404e9e4787d6c60dde904bf6"
+        url "https://github.com/magicdrive/ark/releases/download/v0.4.0/ark_0.4.0_linux_arm64.tar.gz"
+        sha256 "2e4469e88603aa8218bf962f99984e7632d6b78647696d5b65d8119efaa16c50"
 
         def install
           bin.install "ark"
           bash_completion.install "completions/bash/ark-completion.bash" => "ark"
           zsh_completion.install "completions/zsh/_ark" => "_ark"
+          fish_completion.install "completions/fish/ark.fish" => "ark.fish"
         end
       end
     end
