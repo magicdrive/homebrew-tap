@@ -5,13 +5,13 @@
 class Goreg < Formula
   desc "Yet another alternate `goimports` tool."
   homepage "https://github.com/magicdrive/goreg"
-  version "1.2.6"
+  version "1.2.7"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.2.6/goreg_1.2.6_darwin_amd64.tar.gz"
-      sha256 "9fe0c1be9c038741a42b552a65ad3ab38174a1db63b217fc0a4c8479a1455614"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.2.7/goreg_1.2.7_darwin_amd64.tar.gz"
+      sha256 "8f2c146ff0991a32396170a88d1e9334ad82a3e176a177938a52b8b7732a4265"
 
       def install
         bin.install "goreg"
@@ -20,8 +20,8 @@ class Goreg < Formula
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.2.6/goreg_1.2.6_darwin_arm64.tar.gz"
-      sha256 "83295b671d92a16badfdeef3777b6cce71f7164d2af45c99cf00f0a382e9db81"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.2.7/goreg_1.2.7_darwin_arm64.tar.gz"
+      sha256 "f1b1370a22dbe9b1839153d4c5c578c313e7cd31d2d5ea04a49a4b3a712bde95"
 
       def install
         bin.install "goreg"
@@ -34,8 +34,8 @@ class Goreg < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/goreg/releases/download/v1.2.6/goreg_1.2.6_linux_amd64.tar.gz"
-        sha256 "10df3e05b3784acf4047477f75735e1117c6ec709060bde67954ec67dfefe6d0"
+        url "https://github.com/magicdrive/goreg/releases/download/v1.2.7/goreg_1.2.7_linux_amd64.tar.gz"
+        sha256 "9107978a780357b76375f9dfd9762ba7b5706e878823523556793f5fdcf8bf0c"
 
         def install
           bin.install "goreg"
@@ -46,8 +46,8 @@ class Goreg < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/goreg/releases/download/v1.2.6/goreg_1.2.6_linux_arm64.tar.gz"
-        sha256 "01f55a4486f1003354c5545145fa066a24e1e9a6a4785cf7508b5b6bec054788"
+        url "https://github.com/magicdrive/goreg/releases/download/v1.2.7/goreg_1.2.7_linux_arm64.tar.gz"
+        sha256 "d624379f2cdbfded1663ba7fbf7d51bb576b6fee1f546a90b8282cc265d54811"
 
         def install
           bin.install "goreg"
