@@ -5,13 +5,13 @@
 class Ark < Formula
   desc "Yet another alternate [directory | repository] represent text generator tool"
   homepage "https://github.com/magicdrive/ark"
-  version "2.0.2"
+  version "2.0.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/ark/releases/download/v2.0.2/ark_2.0.2_darwin_amd64.tar.gz"
-      sha256 "01bee09ad59a1703c9070f14d5f1a1b86e4cdd209c29f5474fc6ab4269fc3316"
+      url "https://github.com/magicdrive/ark/releases/download/v2.0.3/ark_2.0.3_darwin_amd64.tar.gz"
+      sha256 "e605ad435cd039c0ed11b2336322919d5f1c6b6d7b56f9ffb683e70e01a52b7b"
 
       def install
         bin.install "ark"
@@ -21,8 +21,8 @@ class Ark < Formula
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/ark/releases/download/v2.0.2/ark_2.0.2_darwin_arm64.tar.gz"
-      sha256 "2c146c2e4770088011cc6aa686c241cf5e2c51938740cda0b387bc175baad250"
+      url "https://github.com/magicdrive/ark/releases/download/v2.0.3/ark_2.0.3_darwin_arm64.tar.gz"
+      sha256 "f6475f95286b0f7ed29eab7393fe53621f3c83ae1f9e6725c22b92053b809c23"
 
       def install
         bin.install "ark"
@@ -36,8 +36,8 @@ class Ark < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v2.0.2/ark_2.0.2_linux_amd64.tar.gz"
-        sha256 "670a753844de7367f0c53a7d9f0c08fcbd83fe670613cac24e04f2cc434e61cd"
+        url "https://github.com/magicdrive/ark/releases/download/v2.0.3/ark_2.0.3_linux_amd64.tar.gz"
+        sha256 "c79af8e8b0afb5e0eadfb454cde0f6e7c7cd94ba3a5ae902b1a851d6c0c99511"
 
         def install
           bin.install "ark"
@@ -49,8 +49,8 @@ class Ark < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v2.0.2/ark_2.0.2_linux_arm64.tar.gz"
-        sha256 "392dbcbbac628a3fecd269924072ec0cb15a5b50c875da3686fd2841d3fc1850"
+        url "https://github.com/magicdrive/ark/releases/download/v2.0.3/ark_2.0.3_linux_arm64.tar.gz"
+        sha256 "29e3045592e961ec9172f45767a9e19e8cd3c8ef602f79974898ae317ed62c5b"
 
         def install
           bin.install "ark"
