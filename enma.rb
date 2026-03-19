@@ -5,13 +5,13 @@
 class Enma < Formula
   desc "Yet another integration software with file monitoring."
   homepage "https://github.com/magicdrive/enma"
-  version "1.2.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.0/enma_1.2.0_darwin_amd64.tar.gz"
-      sha256 "f6fcc05c860fba80e333a56d61d54282eb7cdca4c465603380331e8ab6bb45d9"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.1/enma_1.2.1_darwin_amd64.tar.gz"
+      sha256 "e75f4d8400ba6a6a88c711728643f6de23302d8bda81eef78f348e8289384099"
 
       def install
         bin.install "enma"
@@ -20,8 +20,8 @@ class Enma < Formula
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.0/enma_1.2.0_darwin_arm64.tar.gz"
-      sha256 "b034b7c8b583404fe5820c757e0854bfc1d8483b92ac3210d835984ccfd6b173"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.1/enma_1.2.1_darwin_arm64.tar.gz"
+      sha256 "44f700f70df564dbcba09c96c2d3678a5b5b4109cf0e373489a7431aa6502bc4"
 
       def install
         bin.install "enma"
@@ -34,8 +34,8 @@ class Enma < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/enma/releases/download/v1.2.0/enma_1.2.0_linux_amd64.tar.gz"
-        sha256 "2a5c29f6c95cd40103e937a0fbab7274822b2ce3ee24f17dd9d42fb9b146e542"
+        url "https://github.com/magicdrive/enma/releases/download/v1.2.1/enma_1.2.1_linux_amd64.tar.gz"
+        sha256 "e848ca496218e270e3c10ff9e46d4ddfbce46a4012d9df1d4eb6043d2b7c50c5"
 
         def install
           bin.install "enma"
@@ -46,8 +46,8 @@ class Enma < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/enma/releases/download/v1.2.0/enma_1.2.0_linux_arm64.tar.gz"
-        sha256 "ee44ca039ba7f2ae3642822bb4b388c75f18e037ffa0b02b44a84753f12a0990"
+        url "https://github.com/magicdrive/enma/releases/download/v1.2.1/enma_1.2.1_linux_arm64.tar.gz"
+        sha256 "110d3f09b1db9d5bae7ce39d66a4130e0ec4dab75fafda1bb460a526e2ca892c"
 
         def install
           bin.install "enma"
