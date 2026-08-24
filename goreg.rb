@@ -5,13 +5,13 @@
 class Goreg < Formula
   desc "Yet another alternate `goimports` tool."
   homepage "https://github.com/magicdrive/goreg"
-  version "1.3.7"
+  version "1.3.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.7/goreg_1.3.7_darwin_amd64.tar.gz"
-      sha256 "025b5a75187cd30f046b5727df504126455dee054a78e5e9c750b44a2d279732"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.8/goreg_1.3.8_darwin_amd64.tar.gz"
+      sha256 "d6a1a6070a6ae0748e0dc208054fb00a89a5b804593e2acc9bcd52bf63ff9f2b"
 
       define_method(:install) do
         bin.install "goreg"
@@ -20,8 +20,8 @@ class Goreg < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.7/goreg_1.3.7_darwin_arm64.tar.gz"
-      sha256 "9a598e320ac52e756ba176c3c402664d9758b2adb20bd4706f38a2fbc405dad9"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.8/goreg_1.3.8_darwin_arm64.tar.gz"
+      sha256 "c2108de2faf2839cdf4bba2efdbc3bc84c6ceabbe2ebff1c4128c80acccd76d4"
 
       define_method(:install) do
         bin.install "goreg"
@@ -33,8 +33,8 @@ class Goreg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.7/goreg_1.3.7_linux_amd64.tar.gz"
-      sha256 "f0cd1490eb653a748d5808b129adf0706ae21fee875d3187f04af1a9545028a9"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.8/goreg_1.3.8_linux_amd64.tar.gz"
+      sha256 "8c589775874f9bd3aa6db93e83666c400aad236108f6c6b459c2e495c365d5f6"
       define_method(:install) do
         bin.install "goreg"
         bash_completion.install "completions/bash/goreg-completion.bash" => "goreg"
@@ -42,8 +42,8 @@ class Goreg < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.7/goreg_1.3.7_linux_arm64.tar.gz"
-      sha256 "621859d28804be42d2b5ef5d490f2999a34ceeb11118bae0ece4252b2ffd54ce"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.8/goreg_1.3.8_linux_arm64.tar.gz"
+      sha256 "98be8f65b45af5b08560658a0ae8e526344d0c3cfd29bcf153340b2f7de0e332"
       define_method(:install) do
         bin.install "goreg"
         bash_completion.install "completions/bash/goreg-completion.bash" => "goreg"
