@@ -5,13 +5,13 @@
 class Enma < Formula
   desc "Yet another integration software with file monitoring."
   homepage "https://github.com/magicdrive/enma"
-  version "1.2.9"
+  version "1.2.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.9/enma_1.2.9_darwin_amd64.tar.gz"
-      sha256 "7a0e92f36b666670002981e5d5fdc584de7c409a1e1ec137ccedcdb1d7ec18c6"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.10/enma_1.2.10_darwin_amd64.tar.gz"
+      sha256 "45b611af8f7bc1392f4fcb1488da3e02235442928135accf519ecf36db43dab2"
 
       define_method(:install) do
         bin.install "enma"
@@ -20,8 +20,8 @@ class Enma < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.9/enma_1.2.9_darwin_arm64.tar.gz"
-      sha256 "b77719055ef6e85239e5e9ba5310cce97ebadbb4cdfaaa13e637117f380277ad"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.10/enma_1.2.10_darwin_arm64.tar.gz"
+      sha256 "85d4391ba3dfe6b4471eb9aaf90fb1f7823a4ea5e9c4d65aaee05f7e93beeaba"
 
       define_method(:install) do
         bin.install "enma"
@@ -33,8 +33,8 @@ class Enma < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.9/enma_1.2.9_linux_amd64.tar.gz"
-      sha256 "4baf9e42ce3756a53ebb22c4117a0be264f0b5f689960dc24f190fee4ca9b4bb"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.10/enma_1.2.10_linux_amd64.tar.gz"
+      sha256 "674a757c404c49e49be5a5208619673d70caa64de2b103060fa7d044b3c7ac10"
       define_method(:install) do
         bin.install "enma"
         bash_completion.install "completions/bash/enma-completion.bash" => "enma"
@@ -42,8 +42,8 @@ class Enma < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/enma/releases/download/v1.2.9/enma_1.2.9_linux_arm64.tar.gz"
-      sha256 "9dd58d13ec7244ffc5b73a434ebc6c3c29f148f93a1d44105a5b8ef89777e193"
+      url "https://github.com/magicdrive/enma/releases/download/v1.2.10/enma_1.2.10_linux_arm64.tar.gz"
+      sha256 "ae47cdfbf33ab30685351dc629d077f49abcc971c434d96e23a9f8cdf1028c60"
       define_method(:install) do
         bin.install "enma"
         bash_completion.install "completions/bash/enma-completion.bash" => "enma"
