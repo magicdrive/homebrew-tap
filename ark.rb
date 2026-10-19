@@ -5,13 +5,13 @@
 class Ark < Formula
   desc "Code intelligence engine for AI coding agents (MCP server), with a repository text dump"
   homepage "https://github.com/magicdrive/ark"
-  version "6.5.1"
+  version "6.5.2"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/magicdrive/ark/releases/download/v6.5.1/ark_6.5.1_darwin_amd64.tar.gz"
-      sha256 "5a64ce89be93047bd2ee1d4fe6c5c84e456e8812c4f98188bc905c0a9a6980e7"
+      url "https://github.com/magicdrive/ark/releases/download/v6.5.2/ark_6.5.2_darwin_amd64.tar.gz"
+      sha256 "413028be58fc51fb1afe4f18520733f976236ce76417642f51b4890afb5782dd"
 
       def install
         bin.install "ark"
@@ -21,8 +21,8 @@ class Ark < Formula
       end
     end
     on_arm do
-      url "https://github.com/magicdrive/ark/releases/download/v6.5.1/ark_6.5.1_darwin_arm64.tar.gz"
-      sha256 "168a8e2f1781aa34a99ce0bd3b8d18034a977d0bf5b8de75359d57e3aed3394a"
+      url "https://github.com/magicdrive/ark/releases/download/v6.5.2/ark_6.5.2_darwin_arm64.tar.gz"
+      sha256 "202a0a929d571ca53e4baf4f28ae93dda1bffd1bff1621cf154aec38650fbf35"
 
       def install
         bin.install "ark"
@@ -36,8 +36,8 @@ class Ark < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v6.5.1/ark_6.5.1_linux_amd64.tar.gz"
-        sha256 "1dc32a73a498a8bbd0719dfc523e470e1e55d64916f3fbb13c013e48a3eb19c4"
+        url "https://github.com/magicdrive/ark/releases/download/v6.5.2/ark_6.5.2_linux_amd64.tar.gz"
+        sha256 "b6ca37b375a2f4ee2570059b0ce92f9ecb65ee484b12b7fc1237a4c23dc28d3e"
 
         def install
           bin.install "ark"
@@ -49,8 +49,8 @@ class Ark < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/magicdrive/ark/releases/download/v6.5.1/ark_6.5.1_linux_arm64.tar.gz"
-        sha256 "a309d3246b1e9a565f5602b2843f17af50f2f4caf48d45bc1f2ea52e6ff5a9e0"
+        url "https://github.com/magicdrive/ark/releases/download/v6.5.2/ark_6.5.2_linux_arm64.tar.gz"
+        sha256 "39a59b0131a7dde2618fcab15f90b8b3e5d5cda7c75c78a16215b86bfce8203a"
 
         def install
           bin.install "ark"
