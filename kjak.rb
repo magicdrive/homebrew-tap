@@ -5,21 +5,21 @@
 class Kjak < Formula
   desc "Send one notification to Slack, Discord and e-mail from the command line"
   homepage "https://github.com/magicdrive/kjak"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/magicdrive/kjak/releases/download/v0.0.2/kjak_0.0.2_darwin_amd64.tar.gz"
-      sha256 "c76dfc2caef96b2c24a1bd7b214f1cf64b9a19af2db3e66e2e98d175998ea80e"
+      url "https://github.com/magicdrive/kjak/releases/download/v0.0.3/kjak_0.0.3_darwin_amd64.tar.gz"
+      sha256 "7aedfe4a71b6aabd5b911fcfeefd4aa5ad10cebf90284abb10447d9da968ab3f"
 
       define_method(:install) do
         bin.install "kjak"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/magicdrive/kjak/releases/download/v0.0.2/kjak_0.0.2_darwin_arm64.tar.gz"
-      sha256 "2272ccf81b7c10866e79540919b2b764b35fba95b25240a619d44d77c8f95dc4"
+      url "https://github.com/magicdrive/kjak/releases/download/v0.0.3/kjak_0.0.3_darwin_arm64.tar.gz"
+      sha256 "58d5f92642ccb52e2fc5832cde435beb8de27431f59c838880324cbb615214dc"
 
       define_method(:install) do
         bin.install "kjak"
@@ -29,15 +29,15 @@ class Kjak < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/kjak/releases/download/v0.0.2/kjak_0.0.2_linux_amd64.tar.gz"
-      sha256 "5078eb177a523ef502d72dc4798222ce166974ced793d0ae33bed4b310b72b82"
+      url "https://github.com/magicdrive/kjak/releases/download/v0.0.3/kjak_0.0.3_linux_amd64.tar.gz"
+      sha256 "c9b7f7b408625357ce7884e75d444a61021c3d09ca502f602e0db2f5203c0faf"
       define_method(:install) do
         bin.install "kjak"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/magicdrive/kjak/releases/download/v0.0.2/kjak_0.0.2_linux_arm64.tar.gz"
-      sha256 "c194b282167aac5b1adec5eba716321e65879ec245f27644a33a1e50fab3f46c"
+      url "https://github.com/magicdrive/kjak/releases/download/v0.0.3/kjak_0.0.3_linux_arm64.tar.gz"
+      sha256 "d5c8ed5223b9c1ab0f45b6ab71190c8063d6ef5c54839618a66de563dda0cd57"
       define_method(:install) do
         bin.install "kjak"
       end
