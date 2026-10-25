@@ -10,23 +10,23 @@ class Hephaestus < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v0.2.0/hephaestus_0.2.0_darwin_arm64.tar.gz"
-      sha256 "bc70321424f14feae4c3f30361c0a8331277fa5de7aa5d79d462c5fc19651f5b"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_darwin_arm64.tar.gz"
+      sha256 "f4bd7b613638ced83a9af6e27c1c92522201dac4e2bd719b3f69b711fd674e9f"
     end
     on_intel do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v0.2.0/hephaestus_0.2.0_darwin_amd64.tar.gz"
-      sha256 "14ff7c621efce1bf2ed0714cdcdadeb29de1b4c04d648d1b6965884e82e21471"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_darwin_amd64.tar.gz"
+      sha256 "891c2103cff671ea73a1ab762997461da5e8c3dd683985b66a8e306931010e5e"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v0.2.0/hephaestus_0.2.0_linux_arm64.tar.gz"
-      sha256 "ec283fe752153b0164efafbc4be1539a8ac8807d476eca77e511e9e502ed0bcb"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_linux_arm64.tar.gz"
+      sha256 "9825266d0ee146f9be0c09e4a33e4c86f96b84b4619bbd0583edef49a8a7d4ae"
     end
     on_intel do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v0.2.0/hephaestus_0.2.0_linux_amd64.tar.gz"
-      sha256 "f5aa3429fea4ec645cb41eb69fb2e1793d97abbb3df87c69a2b4ef2552c84e4d"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_linux_amd64.tar.gz"
+      sha256 "62f9407602ab6262f30f8ea95b7e9a32148d02a92dc74ddfeb3522cf416c89e1"
     end
   end
 
