@@ -10,31 +10,33 @@ class Hephaestus < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_darwin_arm64.tar.gz"
-      sha256 "f4bd7b613638ced83a9af6e27c1c92522201dac4e2bd719b3f69b711fd674e9f"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.1.0/hephaestus_1.1.0_darwin_arm64.tar.gz"
+      sha256 "7599e69660e2dcf15abe87f273d41d23c6a2baef006d4379349535e3974188af"
     end
     on_intel do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_darwin_amd64.tar.gz"
-      sha256 "891c2103cff671ea73a1ab762997461da5e8c3dd683985b66a8e306931010e5e"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.1.0/hephaestus_1.1.0_darwin_amd64.tar.gz"
+      sha256 "1c2b58292ceb3a63030c6cd0b5580d1c11c15f0fe7196f5296e282598b175fea"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_linux_arm64.tar.gz"
-      sha256 "9825266d0ee146f9be0c09e4a33e4c86f96b84b4619bbd0583edef49a8a7d4ae"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.1.0/hephaestus_1.1.0_linux_arm64.tar.gz"
+      sha256 "8c49815a4b493e203cfe23b70c1ddb6b392e92656d2c4ff4e5ab5e0b93c0b169"
     end
     on_intel do
-      url "https://github.com/magicdrive/hephaestus/releases/download/v1.0.0/hephaestus_1.0.0_linux_amd64.tar.gz"
-      sha256 "62f9407602ab6262f30f8ea95b7e9a32148d02a92dc74ddfeb3522cf416c89e1"
+      url "https://github.com/magicdrive/hephaestus/releases/download/v1.1.0/hephaestus_1.1.0_linux_amd64.tar.gz"
+      sha256 "cb83c554251d6bc7a67b8e16d4d55b2c0b554b996fd014abe8baa330f558b78d"
     end
   end
 
   def install
     bin.install "hephaestus"
+    generate_completions_from_executable(bin/"hephaestus", "completion")
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/hephaestus version")
+    assert_match "_hephaestus", shell_output("#{bin}/hephaestus completion zsh")
   end
 end
