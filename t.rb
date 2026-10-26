@@ -12,23 +12,23 @@ class T < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/t/releases/download/v1.2.0/t_1.2.0_darwin_arm64.tar.gz"
-      sha256 "27edf36ed061e3770477bdda80674c5eea3dd8b4fef9c4941d45ba3141f55ba6"
+      url "https://github.com/magicdrive/t/releases/download/v1.2.1/t_1.2.1_darwin_arm64.tar.gz"
+      sha256 "33879cad7bbee2e2d5675e35263dd74e48c26e190de20da26698a4352a7f789c"
     end
     on_intel do
-      url "https://github.com/magicdrive/t/releases/download/v1.2.0/t_1.2.0_darwin_amd64.tar.gz"
-      sha256 "27edf36ed061e3770477bdda80674c5eea3dd8b4fef9c4941d45ba3141f55ba6"
+      url "https://github.com/magicdrive/t/releases/download/v1.2.1/t_1.2.1_darwin_amd64.tar.gz"
+      sha256 "33879cad7bbee2e2d5675e35263dd74e48c26e190de20da26698a4352a7f789c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/t/releases/download/v1.2.0/t_1.2.0_linux_arm64.tar.gz"
-      sha256 "27edf36ed061e3770477bdda80674c5eea3dd8b4fef9c4941d45ba3141f55ba6"
+      url "https://github.com/magicdrive/t/releases/download/v1.2.1/t_1.2.1_linux_arm64.tar.gz"
+      sha256 "33879cad7bbee2e2d5675e35263dd74e48c26e190de20da26698a4352a7f789c"
     end
     on_intel do
-      url "https://github.com/magicdrive/t/releases/download/v1.2.0/t_1.2.0_linux_amd64.tar.gz"
-      sha256 "27edf36ed061e3770477bdda80674c5eea3dd8b4fef9c4941d45ba3141f55ba6"
+      url "https://github.com/magicdrive/t/releases/download/v1.2.1/t_1.2.1_linux_amd64.tar.gz"
+      sha256 "33879cad7bbee2e2d5675e35263dd74e48c26e190de20da26698a4352a7f789c"
     end
   end
 
