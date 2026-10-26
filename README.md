@@ -17,7 +17,7 @@ The tap is named `magicdrive/tap`; Homebrew maps that name to this repository, `
 | [kjak](https://github.com/magicdrive/kjak) | Send one notification to Slack, Discord and e-mail from the command-line | `brew install magicdrive/tap/kjak` |
 | [t](https://github.com/magicdrive/t) | Lazy tmux wrapper | `brew install magicdrive/tap/t` |
 
-Each formula installs the latest release of its tool. `brew info magicdrive/tap/<formula>` shows the version.
+Each formula installs the latest release of its tool. Once a formula is installed (or trusted), `brew info magicdrive/tap/<formula>` shows the version; see [Trusting This Tap](#trusting-this-tap).
 
 ## How to Install
 
@@ -35,6 +35,49 @@ brew install magicdrive/tap/enma
 ```
 
 The full name (`magicdrive/tap/<formula>`) always selects the formula of this tap, even if another tap has a formula with the same name.
+
+## Trusting This Tap
+
+Homebrew 7.0.11 and later load formulae from third-party taps such as this one only when they are trusted, because loading a formula runs the tap's Ruby code on your machine.
+
+`brew install magicdrive/tap/<formula>` trusts the formula it installs, so installing, upgrading and uninstalling work as shown on this page without extra steps. Only the installed formula is trusted, not the rest of the tap.
+
+Other commands refuse to load a formula that is not trusted yet. For example, running `brew info` after `brew tap magicdrive/tap` but before installing prints:
+
+```text
+Error: Refusing to load formula magicdrive/tap/enma from untrusted tap magicdrive/tap.
+```
+
+If you want to inspect a formula before installing it, add the tap and trust only that formula:
+
+```bash
+brew tap magicdrive/tap
+brew trust --formula magicdrive/tap/enma
+brew info magicdrive/tap/enma
+```
+
+Trusting the whole tap lets Homebrew load every formula in it, including formulae added later. Do this only if you want that:
+
+```bash
+brew trust --tap magicdrive/tap
+```
+
+Trust only the taps you need; trusting a tap means trusting its maintainer's Ruby code. To list what you trust:
+
+```bash
+brew trust --json=v1
+```
+
+To stop trusting a formula or the tap:
+
+```bash
+brew untrust --formula magicdrive/tap/enma
+brew untrust --tap magicdrive/tap
+```
+
+`brew untrust --tap` also removes the trust of each formula of the tap, so `brew info` and other commands refuse to load them again until they are trusted.
+
+If your Homebrew does not have the `brew trust` command, it predates these checks: skip this section.
 
 ## Usage
 
