@@ -1,0 +1,48 @@
+# magicdrive/homebrew-tap: .github/workflows/workflow-lint.yml
+#
+# Bootstrap and review aid for the formula version guard, not a gate.
+#
+# formula-version-guard.yml runs on pull_request_target, that is with the
+# workflow file of the default branch: the pull request that adds or
+# changes it is not checked by its own version. This workflow lints the
+# workflow files of such a pull request with actionlint (and shellcheck,
+# which actionlint runs on every run: script).
+#
+# It runs on pull_request, i.e. with the workflow files of the pull request
+# itself: a pull request can change what it does. So:
+# - never name a job here version-guard, and
+# - never make workflow-lint a required check for anything that matters;
+#   it is a hint for the reviewer, the review of the workflow change is
+#   the control.
+name: Workflow lint
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/**"
+
+permissions: {}
+
+jobs:
+  workflow-lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version: "1.27.3"
+          cache: false
+      - name: actionlint
+        shell: bash
+        env:
+          GOTOOLCHAIN: local
+        run: |
+          set -euo pipefail
+          # A module version: verified against the Go checksum database.
+          GOBIN="$RUNNER_TEMP/bin" go install github.com/rhysd/actionlint/cmd/actionlint@v1.7.12
+          "$RUNNER_TEMP/bin/actionlint" -color
