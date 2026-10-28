@@ -10,23 +10,23 @@ class Goreg < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.11/goreg_1.3.11_darwin_arm64.tar.gz"
-      sha256 "75491cebf764a0fea6806ac20237c4d52f3e26509682d9e8c1a5767e9598e598"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.12/goreg_1.3.12_darwin_arm64.tar.gz"
+      sha256 "30164e3bc9ec4358c2bafd7b0b2af5ee5b143d811a5cbbd451950e901c53fc63"
     end
     on_intel do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.11/goreg_1.3.11_darwin_amd64.tar.gz"
-      sha256 "05185dfbf961b62d9594b0bceddfd15e0a0c2f95ec248de3cb68f9319064ebf8"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.12/goreg_1.3.12_darwin_amd64.tar.gz"
+      sha256 "b532d70f8ce02eb8a433603f4cfca9865f38fc7c2595ed25d38ef16837daa561"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.11/goreg_1.3.11_linux_arm64.tar.gz"
-      sha256 "ca3f5fced6962d4201e5076527b0f2441e8fa7871ac8376cab8135f173b758b7"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.12/goreg_1.3.12_linux_arm64.tar.gz"
+      sha256 "5c298f02365228ed0360f37411d8521f7f3fac5f290572eb3e74b033110c8d5b"
     end
     on_intel do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.3.11/goreg_1.3.11_linux_amd64.tar.gz"
-      sha256 "e0b03721098aa028c795a98259573fa29c1d40cc99f7c8bb390eb129a8089181"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.3.12/goreg_1.3.12_linux_amd64.tar.gz"
+      sha256 "199ed8be1be61765b98207f35458a980e729a866e4421771c66d54541e87c592"
     end
   end
 
