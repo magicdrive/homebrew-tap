@@ -10,23 +10,23 @@ class Kirke < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.4.0/kirke_1.4.0_darwin_arm64.tar.gz"
-      sha256 "dd85fdf036d4e549c93212e62da14d16c3a4a8324fece1103f4f9df8bdb86eea"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.5.0/kirke_1.5.0_darwin_arm64.tar.gz"
+      sha256 "4a530c32f158686ea33e1908e047ecbb66b132b775b62950c5b26ae355431315"
     end
     on_intel do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.4.0/kirke_1.4.0_darwin_amd64.tar.gz"
-      sha256 "4639cecc2b413ac40d977c099881d587504650dffff5cc2f05d8220e9b40a3cf"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.5.0/kirke_1.5.0_darwin_amd64.tar.gz"
+      sha256 "a0716dfc911968931e769e7f8aca6787354cc10ba166e1430d824b58f1da78a4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.4.0/kirke_1.4.0_linux_arm64.tar.gz"
-      sha256 "fd66657b3fc08b38ef3b7c1bc1adcd4c07790a9648b6c24c9b59d84fb8d1b043"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.5.0/kirke_1.5.0_linux_arm64.tar.gz"
+      sha256 "e92396d1d2a4c1c55011d16bad1698bc15cb8e78389cfd9da0259f006f2ef04c"
     end
     on_intel do
-      url "https://github.com/magicdrive/kirke/releases/download/v1.4.0/kirke_1.4.0_linux_amd64.tar.gz"
-      sha256 "0ee6d231374cc80c40a36004bb827dcf6eb852c34f30312fd4e3e7b35d5e284a"
+      url "https://github.com/magicdrive/kirke/releases/download/v1.5.0/kirke_1.5.0_linux_amd64.tar.gz"
+      sha256 "5d0be806d368cc4d15f3034146a8a26d96b63c5260f60e88bcef3f52298b1be7"
     end
   end
 
