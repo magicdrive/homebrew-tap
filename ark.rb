@@ -10,23 +10,23 @@ class Ark < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/ark/releases/download/v6.11.3/ark_6.11.3_darwin_arm64.tar.gz"
-      sha256 "33dada6eabcf55ddb152eae78e9685e80f13c91b6ca3a8c2c24864f43613ca8d"
+      url "https://github.com/magicdrive/ark/releases/download/v6.11.4/ark_6.11.4_darwin_arm64.tar.gz"
+      sha256 "1b2afa389eb54039cd610ed0413462077661944db3ff4cbf916c1efec29c9407"
     end
     on_intel do
-      url "https://github.com/magicdrive/ark/releases/download/v6.11.3/ark_6.11.3_darwin_amd64.tar.gz"
-      sha256 "2cf836e1daea3b20080cbbc1da3928a343d2cd7584012a44227aec8984a84e29"
+      url "https://github.com/magicdrive/ark/releases/download/v6.11.4/ark_6.11.4_darwin_amd64.tar.gz"
+      sha256 "f1aa45b9473afbd1d5cea1f4a1300c56d4ff1a1b6f4e538bd3d4559f60f713c2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/ark/releases/download/v6.11.3/ark_6.11.3_linux_arm64.tar.gz"
-      sha256 "5d75ab432d08122ccacc31410c4138549f28a24269cdb63d4ce222da518ef8be"
+      url "https://github.com/magicdrive/ark/releases/download/v6.11.4/ark_6.11.4_linux_arm64.tar.gz"
+      sha256 "89766c69d1576443a99f5486f7781cbd8a1162bf7f057baaefd60a06d536e386"
     end
     on_intel do
-      url "https://github.com/magicdrive/ark/releases/download/v6.11.3/ark_6.11.3_linux_amd64.tar.gz"
-      sha256 "bff8ba355d89ed765fefdb2ab66255b7dbf3dd8d55817ae49c298795e72c9701"
+      url "https://github.com/magicdrive/ark/releases/download/v6.11.4/ark_6.11.4_linux_amd64.tar.gz"
+      sha256 "6ec2a75f5c3020c80539ecc4e8fae714a74eb851285354a1373fb6f9e9f3b1fa"
     end
   end
 
