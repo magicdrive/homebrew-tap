@@ -10,23 +10,23 @@ class Kjak < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/kjak/releases/download/v1.2.1/kjak_1.2.1_darwin_arm64.tar.gz"
-      sha256 "d2e92212f15deb2a979a6ce75d061d762a803b4cf12e80003ad8727b33edfa1a"
+      url "https://github.com/magicdrive/kjak/releases/download/v1.2.2/kjak_1.2.2_darwin_arm64.tar.gz"
+      sha256 "ee3bfd10275d8c55cf384ebbba30fcd9410a74aa94b23a8af65d186bc62f01c4"
     end
     on_intel do
-      url "https://github.com/magicdrive/kjak/releases/download/v1.2.1/kjak_1.2.1_darwin_amd64.tar.gz"
-      sha256 "7a4992bd114a8afd420403ca7ce985f11760dff55447c607491d9e96ae3a22ac"
+      url "https://github.com/magicdrive/kjak/releases/download/v1.2.2/kjak_1.2.2_darwin_amd64.tar.gz"
+      sha256 "20ba0b2492e12c2019d7a3389a145e674100a189b591db357e202cba883c43d0"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/kjak/releases/download/v1.2.1/kjak_1.2.1_linux_arm64.tar.gz"
-      sha256 "967e98bac3c619072ba68a46b7730d8b32b9d8a7d4e5fbc779954811419db2ac"
+      url "https://github.com/magicdrive/kjak/releases/download/v1.2.2/kjak_1.2.2_linux_arm64.tar.gz"
+      sha256 "534b3fba5100d25efdc6dd15a0cf17335638d43780026b847cd7f9b9480103b5"
     end
     on_intel do
-      url "https://github.com/magicdrive/kjak/releases/download/v1.2.1/kjak_1.2.1_linux_amd64.tar.gz"
-      sha256 "ee13e948267738be5cd09ec81c6e55ebaca97bad87845a75b0e8c90d52afb33b"
+      url "https://github.com/magicdrive/kjak/releases/download/v1.2.2/kjak_1.2.2_linux_amd64.tar.gz"
+      sha256 "84fbd6b0e4df16f11f874f74a8b328211d8daec0be8586221a05e00f228d4428"
     end
   end
 
