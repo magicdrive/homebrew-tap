@@ -6,8 +6,8 @@
 class GitParallel < Formula
   desc "Run commands in parallel across multiple git repositories"
   homepage "https://github.com/magicdrive/git-parallel"
-  url "https://github.com/magicdrive/git-parallel/releases/download/v2.0.0/git-parallel_2.0.0_noarch.tar.gz"
-  sha256 "d9e679dd582d7710a74e204f6d9a35ae94acdd8cbe27019b87c95761fc4c2c74"
+  url "https://github.com/magicdrive/git-parallel/releases/download/v2.0.1/git-parallel_2.0.1_noarch.tar.gz"
+  sha256 "422751c380310c73e1c7550fbc59ae0cb7345673d0242958021e545950f7a2ea"
   license "MIT"
 
   def install
