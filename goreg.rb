@@ -10,23 +10,23 @@ class Goreg < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.4.2/goreg_1.4.2_darwin_arm64.tar.gz"
-      sha256 "7a554feb21d4d1f9487856584581b188fc8ffd426b2e478b8cf2bf7a52b32bbd"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.4.3/goreg_1.4.3_darwin_arm64.tar.gz"
+      sha256 "1de81a9454932698c687f5fa30e22d14ead688fa98ed1902b4248e3d1d9a3856"
     end
     on_intel do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.4.2/goreg_1.4.2_darwin_amd64.tar.gz"
-      sha256 "e7c0a82dfeb8437fb7e23f5b81211d6e64c178c69b55266a6259da8c25c26839"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.4.3/goreg_1.4.3_darwin_amd64.tar.gz"
+      sha256 "5d7683881a93b7df34f8f8910f5e43a1e37cd9dace047cffaa98ce17fdd35153"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.4.2/goreg_1.4.2_linux_arm64.tar.gz"
-      sha256 "18a6316401231f1f121ae4d06beb5558545b3e48c53578cf7e179661fe9441d7"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.4.3/goreg_1.4.3_linux_arm64.tar.gz"
+      sha256 "fe07b84571287c3d4a7ef79c9c18d40026bf2c7be5210862174b606bdb8277c6"
     end
     on_intel do
-      url "https://github.com/magicdrive/goreg/releases/download/v1.4.2/goreg_1.4.2_linux_amd64.tar.gz"
-      sha256 "594cb1f47abc71514c6a520ae7ee2eaaad31ea30fa36f869054e867cfcc089a1"
+      url "https://github.com/magicdrive/goreg/releases/download/v1.4.3/goreg_1.4.3_linux_amd64.tar.gz"
+      sha256 "47e7670880e5c00df6610c1636f16da9f35a5d4e3abb24b3930481aba0cc09b3"
     end
   end
 
