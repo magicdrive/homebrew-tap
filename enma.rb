@@ -10,23 +10,23 @@ class Enma < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/magicdrive/enma/releases/download/v2.1.4/enma_2.1.4_darwin_arm64.tar.gz"
-      sha256 "a9ebbf70818f8f7a7476d23d6fa78195486030d109b96cb0a0bbfc103a8cc1cf"
+      url "https://github.com/magicdrive/enma/releases/download/v2.1.5/enma_2.1.5_darwin_arm64.tar.gz"
+      sha256 "d2f707034db459d3add4661b81abcf2327ffe0c417a8d08a0abb5392b7694522"
     end
     on_intel do
-      url "https://github.com/magicdrive/enma/releases/download/v2.1.4/enma_2.1.4_darwin_amd64.tar.gz"
-      sha256 "ac868c76e568021b33d128fd1e6d55f7160fb364a6ca243a3628f085ea91deab"
+      url "https://github.com/magicdrive/enma/releases/download/v2.1.5/enma_2.1.5_darwin_amd64.tar.gz"
+      sha256 "a179c05ae188d1ca9e76c96265426388e6250c797f0bb924671982b58ac2f6f6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/magicdrive/enma/releases/download/v2.1.4/enma_2.1.4_linux_arm64.tar.gz"
-      sha256 "98e4c481338670090f1c02403669560b8106f5aee9edc62be4466cc247472b1f"
+      url "https://github.com/magicdrive/enma/releases/download/v2.1.5/enma_2.1.5_linux_arm64.tar.gz"
+      sha256 "943c9f9828d69698761859b792e73744dc5fbcb087b27bea56a300376bbfd0b7"
     end
     on_intel do
-      url "https://github.com/magicdrive/enma/releases/download/v2.1.4/enma_2.1.4_linux_amd64.tar.gz"
-      sha256 "5e761187754d8c357637e80db23ee4c869896d66cf9d1e8472c388a796187e8b"
+      url "https://github.com/magicdrive/enma/releases/download/v2.1.5/enma_2.1.5_linux_amd64.tar.gz"
+      sha256 "76fd5b6eee647c3a4f7afa4e2dd6697675a029b2845bb662c66d3473a2b03878"
     end
   end
 
